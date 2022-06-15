@@ -1,69 +1,59 @@
 # Music Lookup and Follow System
 
-## Installation
-
-- [Python](https://www.python.org/)
-
-* [SQLite](https://www.sqlite.org/index.html)
-
-- [Pip Package Manager](https://pypi.org/)
-
----
-
 ## Running the app
 
-資料庫初始:
+Database initialization:
 
 ```
 python3 init_db.py
 ```
 
-啟用後端 server : ( run on localhost:5000 )
+Run the backend server : (run on localhost:5000)
 
 ```
 python3 app.py
 ```
 
-UI 介面使用：
+Interface：
 
-- 使用者介面 : 點選 frontend 資料夾裡的 login.html
+* User : open ```./frontend/login.html```
 
-* 後台介面 : 點選 frontend 資料夾裡的 backstage.html
+* Admin : open ```./frontend/backstage.html```
 
 ---
 
-## Functions of the app
+## CRUD
 
 ### Insert
 
-- 使用者可自行註冊會員帳號
-- 會員可藉由訂閱的方式來根據喜好客製化他們的 4 種訂閱清單
-  - 歌曲清單
-  - 歌手清單
-  - 製作人清單
-  - 作曲者清單
+- User account registration
+- User can modify their 4 types of follwing lists via subscribing
+  - Song list
+  - Artist list
+  - Songwriter list
+  - Producer list
 
-* 後台可讓管理者新增歌曲
+* The admin can modify every list
 
 ### Delete
 
-- 後台可讓管理者刪除會員帳號
+- The admin can delete accounts
 
 ### Search
 
-- 查詢歌曲
-  - 透過歌曲名稱查詢
-  - 透過歌手名稱查詢他所演唱過的所有歌曲
-  - 透過製作人名稱查詢他所製作過的所有歌曲
-  - 透過作曲者名稱查詢他所作曲過的所有歌曲
+- Songs lookups
+  - Lookup songs by song name
+  - Lookup songs by artist
+  - Lookup songs by songwriter
+  - Lookup songs by producer
 
-* 會員的 4 種訂閱清單查詢
-  - 可查詢會員所訂閱的
-    - 歌曲
-    - 歌手
-    - 製作人
-    - 作曲者
+- User follwoing list lookups
+  - Lookups a user's following
+    - Song
+    - Artist
+    - Songwriter
+    - Producer
 
 ### Update
 
-- 後台可讓管理者更改會員名稱
+- The admin can update user name
